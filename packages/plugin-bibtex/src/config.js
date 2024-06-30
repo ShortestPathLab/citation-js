@@ -1,6 +1,6 @@
-import biblatex from './mapping/biblatexTypes.json'
-import bibtex from './mapping/bibtexTypes.json'
-import * as constants from './input/constants.js'
+import biblatex from "./mapping/biblatexTypes.json" assert { type: "json" };
+import bibtex from "./mapping/bibtexTypes.json" assert { type: "json" };
+import * as constants from "./input/constants.js";
 
 /**
  * @memberof module:@citation-js/plugin-bibtex
@@ -185,7 +185,7 @@ export default {
   parse: {
     biblatex: true,
     strict: false,
-    sentenceCase: 'never'
+    sentenceCase: "never",
   },
 
   /**
@@ -198,7 +198,7 @@ export default {
   format: {
     useIdAsLabel: false,
     checkLabel: true,
-    asciiOnly: true
+    asciiOnly: true,
   },
 
   /**
@@ -208,7 +208,7 @@ export default {
    * @property {Boolean} [biber.namedAnnotationMarker=':'] - Signifier that a data annotation is named.
    */
   biber: {
-    annotationMarker: '+an',
-    namedAnnotationMarker: ':'
-  }
-}
+    annotationMarker: "+an",
+    namedAnnotationMarker: ":",
+  },
+};
