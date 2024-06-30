@@ -26,6 +26,10 @@ export default new util.Translator([
     target: 'annote'
   },
   {
+    source: 'pdf',
+    target: 'pdf'
+  },
+  {
     source: 'address',
     target: 'publisher-place',
     convert: Converters.PICK
