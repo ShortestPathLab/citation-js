@@ -132,6 +132,10 @@ export default new util.Translator([
     target: "annote",
   },
   {
+    source: "pdf",
+    target: "pdf",
+  },
+  {
     source: ["author", "author+an:orcid"],
     target: "author",
     convert: Converters.NAMES_ORCID,
